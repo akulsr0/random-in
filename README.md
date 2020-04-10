@@ -15,6 +15,7 @@ Get Random Numbers, Names, Dates and much more.
       - [Get Random Integer of n Digit](#get-random-integer-of-n-digit)
       - [Get Random Integer in a given range](#get-random-integer-in-a-given-range)
       - [Get Random Floating number in a given range](#get-random-floating-number-in-a-given-range)
+      - [Get N Random Number in a given range](#get-n-random-number-in-a-given-range)
     - [Names](#names)
       - [Get Random Name](#get-random-name)
       - [Get Random Male Name](#get-random-male-name)
@@ -65,6 +66,15 @@ console.log(getRandomBetween(5,50))    // 26
 ```javascript
 const {getRandomFloatBetween} = require("random-in")
 console.log(getRandomFloatBetween(5,50))    // 19.69726289036264
+```
+
+#### Get N Random Number in a given range
+
+*getNRandomBetween(n, min, max) --> to get n random numbers between min and max*
+
+```javascript
+const {getNRandomBetween} = require("random-in")
+console.log(getNRandomBetween(5,1,50))    // [34, 23, 28, 6, 14]
 ```
 
 ### Names
