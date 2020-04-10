@@ -1,0 +1,20 @@
+{
+  "name": "random-in",
+  "version": "1.0.106",
+  "description": "A package to get random values",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "prepublish": "tsc",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Akul Srivastava",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@types/node": "^13.11.1"
+  }
+}
