@@ -1,6 +1,6 @@
 {
   "name": "random-in",
-  "version": "1.0.107",
+  "version": "1.0.108",
   "description": "A package to get random values",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
