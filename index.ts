@@ -20,6 +20,18 @@ import {
 
 import { getDateBetween } from './src/date';
 
+import {
+  getAlphanumericPassword,
+  getLowercasePassword,
+  getUppercasePassword,
+  getAlphaPassword,
+  getAlphaLowercasePassword,
+  getAlphaUppercasePassword,
+  getNumericPassword,
+} from './src/passwords';
+
+import { getCountry } from './src/countries';
+
 module.exports.getNDigit = (n: number): number => {
   return getNDigit(n);
 };
@@ -89,4 +101,36 @@ module.exports.getIndianLastName = (): string => {
 
 module.exports.getDateBetween = (start: Date, end: Date): Date => {
   return getDateBetween(start, end);
+};
+
+module.exports.getAlphanumericPassword = (n: number): string => {
+  return getAlphanumericPassword(n);
+};
+
+module.exports.getLowercasePassword = (n: number): string => {
+  return getLowercasePassword(n);
+};
+
+module.exports.getUppercasePassword = (n: number): string => {
+  return getUppercasePassword(n);
+};
+
+module.exports.getAlphaPassword = (n: number): string => {
+  return getAlphaPassword(n);
+};
+
+module.exports.getAlphaLowercasePassword = (n: number): string => {
+  return getAlphaLowercasePassword(n);
+};
+
+module.exports.getAlphaUppercasePassword = (n: number): string => {
+  return getAlphaUppercasePassword(n);
+};
+
+module.exports.getNumericPassword = (n: number): string => {
+  return getNumericPassword(n);
+};
+
+module.exports.getCountry = (): string => {
+  return getCountry();
 };

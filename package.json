@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "prepublish": "tsc",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "ts-node index.ts"
   },
   "author": "Akul Srivastava",
   "license": "MIT",
