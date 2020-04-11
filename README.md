@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/axios.svg?style=flat-square)](https://www.npmjs.com/package/random-in)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/akulsr0/random-in/blob/master/LICENSE.md)
-[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)  
+[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
 Get Random Numbers, Names, Dates and much more.
 
@@ -31,6 +31,16 @@ Get Random Numbers, Names, Dates and much more.
       - [Get Random Indian Last Name](#get-random-indian-last-name)
     - [Dates](#dates)
       - [Get Random Date in between two Dates](#get-random-date-in-between-two-dates)
+    - [Passwords](#passwords)
+      - [Get Alphanumeric Password](#get-alphanumeric-password)
+      - [Get Lowercase Password](#get-lowercase-password)
+      - [Get Uppercase Password](#get-uppercase-password)
+      - [Get Alpha Password](#get-alpha-password)
+      - [Get Alpha Lowercase Password](#get-alpha-lowercase-password)
+      - [Get Alpha Uppercase Password](#get-alpha-uppercase-password)
+      - [Get Numeric Password](#get-numeric-password)
+    - [Country](#country)
+      - [Get Random Country](#get-random-country)
 
 ### Installation
 
@@ -42,39 +52,40 @@ npm install random-in
 
 #### Get Random Integer of n Digit
 
-*getNDigit(n) --> n is number of digits*
+_getNDigit(n) --> n is number of digits_
 
 ```javascript
-const {getNDigit} = require("random-in")
-console.log(getNDigit(5))   // 24646
+const { getNDigit } = require('random-in');
+console.log(getNDigit(5)); // 24646
 ```
 
 #### Get Random Integer in a given range
 
-*getRandomBetween(min, max) ---> to get a random number between min and max*
+_getRandomBetween(min, max) ---> to get a random number between min and max_
+
 > Note: min and max are inclusive i.e. getRandomBetween(1,100) may return 1 or 100
 
 ```javascript
-const {getRandomBetween} = require("random-in")
-console.log(getRandomBetween(5,50))    // 26
+const { getRandomBetween } = require('random-in');
+console.log(getRandomBetween(5, 50)); // 26
 ```
 
 #### Get Random Floating number in a given range
 
-*getRandomFloatBetween(min, max) --> to get a random floating number between min and max*
+_getRandomFloatBetween(min, max) --> to get a random floating number between min and max_
 
 ```javascript
-const {getRandomFloatBetween} = require("random-in")
-console.log(getRandomFloatBetween(5,50))    // 19.69726289036264
+const { getRandomFloatBetween } = require('random-in');
+console.log(getRandomFloatBetween(5, 50)); // 19.69726289036264
 ```
 
 #### Get N Random Number in a given range
 
-*getNRandomBetween(n, min, max) --> to get n random numbers between min and max*
+_getNRandomBetween(n, min, max) --> to get n random numbers between min and max_
 
 ```javascript
-const {getNRandomBetween} = require("random-in")
-console.log(getNRandomBetween(5,1,50))    // [34, 23, 28, 6, 14]
+const { getNRandomBetween } = require('random-in');
+console.log(getNRandomBetween(5, 1, 50)); // [34, 23, 28, 6, 14]
 ```
 
 ### Names
@@ -83,110 +94,110 @@ Get random users name
 
 #### Get Random Name
 
-*Get a random full name of any gender*
+_Get a random full name of any gender_
 
 ```javascript
-const {getName} = require("random-in")
-console.log(getName())  // "Winnifred Struble"
+const { getName } = require('random-in');
+console.log(getName()); // "Winnifred Struble"
 ```
 
 #### Get Random Male Name
 
-*Get a random full name (Male)*
+_Get a random full name (Male)_
 
 ```javascript
-const {getMaleName} = require("random-in")
-console.log(getMaleName())  // "Derek Gilstrap"
+const { getMaleName } = require('random-in');
+console.log(getMaleName()); // "Derek Gilstrap"
 ```
 
 #### Get Random Female Name
 
-*Get a random full name (Female)*
+_Get a random full name (Female)_
 
 ```javascript
-const {getFemaleName} = require("random-in")
-console.log(getFemaleName())    // "Gerri Bavaro"
+const { getFemaleName } = require('random-in');
+console.log(getFemaleName()); // "Gerri Bavaro"
 ```
 
 #### Get Random Male First Name
 
-*Get a random first name (Male)*
+_Get a random first name (Male)_
 
 ```javascript
-const {getMaleFirstName} = require("random-in")
-console.log(getMaleFirstName())    // Jamey
+const { getMaleFirstName } = require('random-in');
+console.log(getMaleFirstName()); // Jamey
 ```
 
 #### Get Random Female First Name
 
-*Get a random first name (Female)*
+_Get a random first name (Female)_
 
 ```javascript
-const {getFemaleFirstName} = require("random-in")
-console.log(getFemaleFirstName())   // "Beckie"
+const { getFemaleFirstName } = require('random-in');
+console.log(getFemaleFirstName()); // "Beckie"
 ```
 
 #### Get Random Last Name
 
-*Get a random last name*
+_Get a random last name_
 
 ```javascript
-const {getLastName} = require("random-in")
-console.log(getLastName())  // "Reinbold"
+const { getLastName } = require('random-in');
+console.log(getLastName()); // "Reinbold"
 ```
 
 #### Get Random Indian Name
 
-*Get a random Indian full name of any gender*
+_Get a random Indian full name of any gender_
 
 ```javascript
-const {getIndianName} = require("random-in")
-console.log(getIndianName())    // "Nagendra Shankar"
+const { getIndianName } = require('random-in');
+console.log(getIndianName()); // "Nagendra Shankar"
 ```
 
 #### Get Random Indian Male Name
 
-*Get a random Indian full name (Male)*
+_Get a random Indian full name (Male)_
 
 ```javascript
-const {getIndianMaleName} = require("random-in")
-console.log(getIndianMaleName())    // "Ashok Dalal"
+const { getIndianMaleName } = require('random-in');
+console.log(getIndianMaleName()); // "Ashok Dalal"
 ```
 
 #### Get Random Indian Female Name
 
-*Get a random Indian full name (Female)*
+_Get a random Indian full name (Female)_
 
 ```javascript
-const {getIndianFemaleName} = require("random-in")
-console.log(getIndianFemaleName())  // "Deepali Bose"
+const { getIndianFemaleName } = require('random-in');
+console.log(getIndianFemaleName()); // "Deepali Bose"
 ```
 
 #### Get Random Indian Male First Name
 
-*Get a random Indian first name (Male)*
+_Get a random Indian first name (Male)_
 
 ```javascript
-const {getIndianMaleFirstName} = require("random-in")
-console.log(getIndianMaleFirstName())   // "Mukul"
+const { getIndianMaleFirstName } = require('random-in');
+console.log(getIndianMaleFirstName()); // "Mukul"
 ```
 
 #### Get Random Indian Female First Name
 
-*Get a Random Indian first name (Female)*
+_Get a Random Indian first name (Female)_
 
 ```javascript
-const {getIndianFemaleFirstName} = require("random-in")
-console.log(getIndianFemaleFirstName())   // "Anandi"
+const { getIndianFemaleFirstName } = require('random-in');
+console.log(getIndianFemaleFirstName()); // "Anandi"
 ```
 
 #### Get Random Indian Last Name
 
-*Get a random Indian last name*
+_Get a random Indian last name_
 
 ```javascript
-const {getIndianLastName} = require("random-in")
-console.log(getIndianLastName())    // "Pant"
+const { getIndianLastName } = require('random-in');
+console.log(getIndianLastName()); // "Pant"
 ```
 
 ### Dates
@@ -195,14 +206,94 @@ Get Random Dates
 
 #### Get Random Date in between two Dates
 
-*Get a random date between two dates*
+_Get a random date between two dates_
 
 > Note: new Date(YYYY, MM, DD)
 > If month is less than 10, let's say 4, use 4 instead of 04
 > If date is less than 10, let's say 6, use 6 instead of 06
 
 ```javascript
-const {getDateBetween} = require("random-in")
-console.log(getDateBetween(new Date(1947,8,15), new Date()))
+const { getDateBetween } = require('random-in');
+console.log(getDateBetween(new Date(1947, 8, 15), new Date()));
 // Tue Aug 07 1956 10:42:05 GMT+0530 (India Standard Time)
+```
+
+### Passwords
+
+Get Random Passwords
+
+#### Get Alphanumeric Password
+
+_Get a random alphanumeric password of n length_
+
+```javascript
+const { getAlphanumericPassword } = require('random-in');
+console.log(getAlphanumericPassword(8)); // "IVYs4uI9"
+```
+
+#### Get Lowercase Password
+
+_Get a random lowercase alphanumeric password of n length_
+
+```javascript
+const { getLowercasePassword } = require('random-in');
+console.log(getLowercasePassword(8)); // "ffm690dx"
+```
+
+#### Get Uppercase Password
+
+_Get a random uppercase alphanumeric password of n length_
+
+```javascript
+const { getUppercasePassword } = require('random-in');
+console.log(getUppercasePassword(8)); // "S7PM8AOO"
+```
+
+#### Get Alpha Password
+
+_Get a random only alphabet password of n length_
+
+```javascript
+const { getAlphaPassword } = require('random-in');
+console.log(getAlphaPassword(8)); // "juYyjMJs"
+```
+
+#### Get Alpha Lowercase Password
+
+_Get a random only lowercase alphabets password of n length_
+
+```javascript
+const { getAlphaLowercasePassword } = require('random-in');
+console.log(getAlphaLowercasePassword(8)); // "stysfpbs"
+```
+
+#### Get Alpha Uppercase Password
+
+_Get a random only uppercase alphabets password of n length_
+
+```javascript
+const { getAlphaUppercasePassword } = require('random-in');
+console.log(getAlphaUppercasePassword(8)); // "ZHKNQYTY"
+```
+
+#### Get Numeric Password
+
+_Get a random numeric password of n length_
+
+```javascript
+const { getNumericPassword } = require('random-in');
+console.log(getNumericPassword(8)); // "94970880"
+```
+
+### Country
+
+Get Random Country
+
+#### Get Random Country
+
+_Get a random country name_
+
+```javascript
+const { getCountry } = require('random-in');
+console.log(getCountry()); // "United Kingdom"
 ```
