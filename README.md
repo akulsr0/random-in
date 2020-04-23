@@ -43,6 +43,8 @@ Get Random Numbers, Names, Dates and much more.
       - [Get Numeric Password](#get-numeric-password)
     - [Country](#country)
       - [Get Random Country](#get-random-country)
+    - [Color](#color)
+      - [Get Random Hex Color](#get-random-color)
 
 ### Installation
 
@@ -311,4 +313,16 @@ _Get a random country name_
 ```javascript
 const { getCountry } = require('random-in');
 console.log(getCountry()); // "United Kingdom"
+```
+
+### Color
+
+Get Random Color
+
+#### Get Random Color
+
+_Get a random hex color_
+```javascript
+const { getRandomColorHex } = require('random-in');
+console.log(getRandomColorHex()); // "#94FA02"
 ```
