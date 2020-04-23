@@ -4,133 +4,139 @@ import { getRandomFloatBetween } from './src/numbers';
 import { getNRandomBetween } from './src/numbers';
 
 import {
-  getName,
-  getMaleName,
-  getFemaleName,
-  getMaleFirstName,
-  getFemaleFirstName,
-  getLastName,
-  getIndianName,
-  getIndianMaleName,
-  getIndianFemaleName,
-  getIndianMaleFirstName,
-  getIndianFemaleFirstName,
-  getIndianLastName,
+	getName,
+	getMaleName,
+	getFemaleName,
+	getMaleFirstName,
+	getFemaleFirstName,
+	getLastName,
+	getIndianName,
+	getIndianMaleName,
+	getIndianFemaleName,
+	getIndianMaleFirstName,
+	getIndianFemaleFirstName,
+	getIndianLastName
 } from './src/names';
 
 import { getDateBetween } from './src/date';
 
 import {
-  getAlphanumericPassword,
-  getLowercasePassword,
-  getUppercasePassword,
-  getAlphaPassword,
-  getAlphaLowercasePassword,
-  getAlphaUppercasePassword,
-  getNumericPassword,
+	getAlphanumericPassword,
+	getLowercasePassword,
+	getUppercasePassword,
+	getAlphaPassword,
+	getAlphaLowercasePassword,
+	getAlphaUppercasePassword,
+	getNumericPassword
 } from './src/passwords';
 
 import { getCountry } from './src/countries';
 
+import { getRandomEmail } from './src/email';
+
+module.exports.getRandomEmail = (): string => {
+	return getRandomEmail();
+};
+
 module.exports.getNDigit = (n: number): number => {
-  return getNDigit(n);
+	return getNDigit(n);
 };
 module.exports.getRandomBetween = (min: number, max: number): number => {
-  return getRandomBetween(min, max);
+	return getRandomBetween(min, max);
 };
 
 module.exports.getRandomFloatBetween = (min: number, max: number): number => {
-  return getRandomFloatBetween(min, max);
+	return getRandomFloatBetween(min, max);
 };
 
 module.exports.getNRandomBetween = (
-  n: number,
-  min: number,
-  max: number
+	n: number,
+	min: number,
+	max: number
 ): number[] => {
-  return getNRandomBetween(n, min, max);
+	return getNRandomBetween(n, min, max);
 };
 
 module.exports.getName = (): string => {
-  return getName();
+	return getName();
 };
 
 module.exports.getMaleName = (): string => {
-  return getMaleName();
+	return getMaleName();
 };
 
 module.exports.getFemaleName = (): string => {
-  return getFemaleName();
+	return getFemaleName();
 };
 
 module.exports.getMaleFirstName = (): string => {
-  return getMaleFirstName();
+	return getMaleFirstName();
 };
 
 module.exports.getFemaleFirstName = (): string => {
-  return getFemaleFirstName();
+	return getFemaleFirstName();
 };
 
 module.exports.getLastName = (): string => {
-  return getLastName();
+	return getLastName();
 };
 
 module.exports.getIndianName = (): string => {
-  return getIndianName();
+	return getIndianName();
 };
 
 module.exports.getIndianMaleName = (): string => {
-  return getIndianMaleName();
+	return getIndianMaleName();
 };
 
 module.exports.getIndianFemaleName = (): string => {
-  return getIndianFemaleName();
+	return getIndianFemaleName();
 };
 
 module.exports.getIndianMaleFirstName = (): string => {
-  return getIndianMaleFirstName();
+	return getIndianMaleFirstName();
 };
 
 module.exports.getIndianFemaleFirstName = (): string => {
-  return getIndianFemaleFirstName();
+	return getIndianFemaleFirstName();
 };
 
 module.exports.getIndianLastName = (): string => {
-  return getIndianLastName();
+	return getIndianLastName();
 };
 
 module.exports.getDateBetween = (start: Date, end: Date): Date => {
-  return getDateBetween(start, end);
+	return getDateBetween(start, end);
 };
 
 module.exports.getAlphanumericPassword = (n: number): string => {
-  return getAlphanumericPassword(n);
+	return getAlphanumericPassword(n);
 };
 
 module.exports.getLowercasePassword = (n: number): string => {
-  return getLowercasePassword(n);
+	return getLowercasePassword(n);
 };
 
 module.exports.getUppercasePassword = (n: number): string => {
-  return getUppercasePassword(n);
+	return getUppercasePassword(n);
 };
 
 module.exports.getAlphaPassword = (n: number): string => {
-  return getAlphaPassword(n);
+	return getAlphaPassword(n);
 };
 
 module.exports.getAlphaLowercasePassword = (n: number): string => {
-  return getAlphaLowercasePassword(n);
+	return getAlphaLowercasePassword(n);
 };
 
 module.exports.getAlphaUppercasePassword = (n: number): string => {
-  return getAlphaUppercasePassword(n);
+	return getAlphaUppercasePassword(n);
 };
 
 module.exports.getNumericPassword = (n: number): string => {
-  return getNumericPassword(n);
+	return getNumericPassword(n);
 };
 
 module.exports.getCountry = (): string => {
-  return getCountry();
+	return getCountry();
 };
