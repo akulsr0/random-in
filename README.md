@@ -31,6 +31,8 @@ Get Random Numbers, Names, Dates and much more.
       - [Get Random Indian Last Name](#get-random-indian-last-name)
     - [Dates](#dates)
       - [Get Random Date in between two Dates](#get-random-date-in-between-two-dates)
+    - [Emails](#emails)
+      - [Get Random Email Id](#get-random-email-id)
     - [Passwords](#passwords)
       - [Get Alphanumeric Password](#get-alphanumeric-password)
       - [Get Lowercase Password](#get-lowercase-password)
@@ -216,6 +218,19 @@ _Get a random date between two dates_
 const { getDateBetween } = require('random-in');
 console.log(getDateBetween(new Date(1947, 8, 15), new Date()));
 // Tue Aug 07 1956 10:42:05 GMT+0530 (India Standard Time)
+```
+
+### Emails
+
+Get Random Email Address
+
+#### Get Random Email Id
+
+_Get a random email id_
+
+```javascript
+const { getRandomEmail } = require('random-in');
+console.log(getRandomEmail()); // "agnuskloster@yomail.com"
 ```
 
 ### Passwords
