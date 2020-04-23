@@ -34,10 +34,6 @@ import { getCountry } from './src/countries';
 
 import { getRandomEmail } from './src/email';
 
-module.exports.getRandomEmail = (): string => {
-  return getRandomEmail();
-};
-
 module.exports.getNDigit = (n: number): number => {
   return getNDigit(n);
 };
@@ -139,4 +135,8 @@ module.exports.getNumericPassword = (n: number): string => {
 
 module.exports.getCountry = (): string => {
   return getCountry();
+};
+
+module.exports.getRandomEmail = (): string => {
+  return getRandomEmail();
 };

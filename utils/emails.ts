@@ -10,7 +10,7 @@ export const randomEmails: string[] = [
   'zoho.com',
   'gmx.es',
   'mailinator.com',
-  'gamil.com',
+  'gmail.com',
   'yomail.info',
   'outlouk.com',
   'mohmal.com',
