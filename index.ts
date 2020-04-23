@@ -34,7 +34,8 @@ import { getCountry } from './src/countries';
 
 import { getRandomEmail } from './src/email';
 
-import { getRandomColorHex } from './src/color'
+import { getRandomColorHex } from './src/color';
+
 module.exports.getNDigit = (n: number): number => {
   return getNDigit(n);
 };
