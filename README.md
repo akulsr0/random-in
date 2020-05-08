@@ -44,7 +44,9 @@ Get Random Numbers, Names, Dates and much more.
     - [Country](#country)
       - [Get Random Country](#get-random-country)
     - [Color](#color)
-      - [Get Random Hex Color](#get-random-color)
+      - [Get Random Color](#get-random-color)
+    - [Programming](#programming)
+      - [Get random programming language](#get-random-programming-language)
 
 ### Installation
 
@@ -322,7 +324,21 @@ Get Random Color
 #### Get Random Color
 
 _Get a random hex color_
+
 ```javascript
 const { getRandomColorHex } = require('random-in');
 console.log(getRandomColorHex()); // "#94FA02"
+```
+
+### Programming
+
+Get random programming stuff
+
+#### Get random programming language
+
+_Get a random programming language_
+
+```javascript
+const { getRandomProgrammingLanguage } = require('random-in');
+console.log(getRandomProgrammingLanguage()); // "Julia"
 ```
