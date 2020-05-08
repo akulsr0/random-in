@@ -36,6 +36,8 @@ import { getRandomEmail } from './src/email';
 
 import { getRandomColorHex } from './src/color';
 
+import { getRandomProgrammingLanguage } from './src/programming';
+
 module.exports.getNDigit = (n: number): number => {
   return getNDigit(n);
 };
@@ -145,4 +147,8 @@ module.exports.getRandomEmail = (): string => {
 
 module.exports.getRandomColorHex = (): string => {
   return getRandomColorHex();
+};
+
+module.exports.getRandomProgrammingLanguage = (): string => {
+  return getRandomProgrammingLanguage();
 };
