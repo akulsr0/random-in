@@ -46,7 +46,7 @@ Get Random Numbers, Names, Dates and much more.
     - [Color](#color)
       - [Get Random Color](#get-random-color)
     - [Programming](#programming)
-      - [Get random programming language](#get-random-programming-language)
+      - [Get Random Programming Language](#get-random-programming-language)
 
 ### Installation
 
