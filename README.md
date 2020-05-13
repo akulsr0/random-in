@@ -31,6 +31,7 @@ Get Random Numbers, Names, Dates and much more.
       - [Get Random Indian Last Name](#get-random-indian-last-name)
     - [Dates](#dates)
       - [Get Random Date in between two Dates](#get-random-date-in-between-two-dates)
+      - [Get Random Date (Future)](#get-random-date-future)
     - [Emails](#emails)
       - [Get Random Email Id](#get-random-email-id)
     - [Passwords](#passwords)
@@ -222,6 +223,20 @@ _Get a random date between two dates_
 const { getDateBetween } = require('random-in');
 console.log(getDateBetween(new Date(1947, 8, 15), new Date()));
 // Tue Aug 07 1956 10:42:05 GMT+0530 (India Standard Time)
+```
+
+#### Get Random Date (Future)
+
+_Get a random date from future_
+
+> Note: Default future date limit is 50 years from current date.
+> getRandomDateFuture(futureYear).
+> futureYear is of type "number".
+
+```javascript
+const { getRandomDateFuture } = require('random-in');
+console.log(getRandomDateFuture(2021));
+// 2021-07-22T00:50:23.025Z
 ```
 
 ### Emails

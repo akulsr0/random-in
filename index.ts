@@ -18,7 +18,7 @@ import {
   getIndianLastName,
 } from './src/names';
 
-import { getDateBetween } from './src/date';
+import { getDateBetween, getRandomDateFuture } from './src/date';
 
 import {
   getAlphanumericPassword,
@@ -107,6 +107,10 @@ module.exports.getIndianLastName = (): string => {
 
 module.exports.getDateBetween = (start: Date, end: Date): Date => {
   return getDateBetween(start, end);
+};
+
+module.exports.getRandomDateFuture = (futureYear: number): Date | Error => {
+  return getRandomDateFuture(futureYear);
 };
 
 module.exports.getAlphanumericPassword = (n: number): string => {
