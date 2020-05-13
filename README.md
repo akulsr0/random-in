@@ -223,6 +223,17 @@ const { getDateBetween } = require('random-in');
 console.log(getDateBetween(new Date(1947, 8, 15), new Date()));
 // Tue Aug 07 1956 10:42:05 GMT+0530 (India Standard Time)
 ```
+_Get a random date from future_
+
+> Note: Default future date limit is 50 years from current date.
+> getRandomDateFuture(futureYear).
+> futureYear is of type "number".
+
+```javascript
+const { getRandomDateFuture } = require('random-in');
+console.log(getRandomDateFuture(2021));
+// 2021-07-22T00:50:23.025Z
+```
 
 ### Emails
 
