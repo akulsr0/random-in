@@ -1,5 +1,6 @@
 # random-in
 
+[![HitCount](http://hits.dwyl.com/akulsr0/random-in.svg)](http://hits.dwyl.com/akulsr0/random-in)
 [![npm version](https://img.shields.io/npm/v/axios.svg?style=flat-square)](https://www.npmjs.com/package/random-in)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/akulsr0/random-in/blob/master/LICENSE.md)
 [![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
